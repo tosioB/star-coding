@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div>별코딩 스터디 리액트 생성</div>
+    <div>별코딩</div>
   );
 }
 
