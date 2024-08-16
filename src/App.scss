@@ -1,0 +1,40 @@
+$main-color: #81C784;
+$border-color: #E1E1E1;
+$white-color: #FFFFFF;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 14px;
+  background-color: $main-color;
+  border: none;
+  border-radius: 4px;
+  color: $white-color;
+  cursor: pointer;
+}
+input[type="text"] {
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid;
+  border-color: $border-color;
+  border-radius: 4px;
+  &:focus {
+    outline: 1px solid;
+    outline-color: $main-color;
+    outline-offset: -1px;
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}

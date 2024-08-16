@@ -2,7 +2,7 @@ import { useState, useMemo } from "react"
 
 const hardCalculate = (number) => {
   console.log('어려운 계산');
-  for (let i = 0; i < 999999999; i++) {} // 생각하는 시간
+  for (let i = 0; i < 999999999; i++) {} // 계산 시간 지연
   return number + 10000;
 }
 
@@ -16,10 +16,12 @@ function App() {
   const [easyNumber, setEasyNumber] = useState(1);
 
   // const hardSum = hardCalculate(hartNumber);
-  const hardSum = useMemo(() => { // useMemo를 사용해 hartNumber의 값이 변할 때 함수 실행
+  // useMemo를 사용해 hartNumber 값이 변할 때만 hardCalculate 실행
+  const hardSum = useMemo(() => {
     return hardCalculate(hartNumber);
   }, [hartNumber]);
 
+  // easyCalculate는 매번 실행됨
   const easySum = easyCalculate(easyNumber);
 
   return (
