@@ -9,7 +9,7 @@ function App() {
   console.log("1");
 
   return (
-    <div>비동기 프로그래밍(자바스크립트 강의)</div>
+    <div>비동기 프로그래밍</div>
   );
 }
 

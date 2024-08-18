@@ -52,7 +52,7 @@ function App() {
   
 
   return (
-    <div>비동기 프로그래밍 - 콜백함수(feat.콜백지옥)(자바스크립트 강의)</div>
+    <div>비동기 프로그래밍 - 콜백함수(feat.콜백지옥)</div>
   );
 }
 
