@@ -12,14 +12,14 @@ const easyCalculate = (number) => {
 }
 
 function App() {
-  const [hartNumber, setHartNumber] = useState(1);
+  const [hardNumber, sethardNumber] = useState(1);
   const [easyNumber, setEasyNumber] = useState(1);
 
-  // const hardSum = hardCalculate(hartNumber);
-  // useMemo를 사용해 hartNumber 값이 변할 때만 hardCalculate 실행
+  // const hardSum = hardCalculate(hardNumber);
+  // useMemo를 사용해 hardNumber 값이 변할 때만 hardCalculate 실행
   const hardSum = useMemo(() => {
-    return hardCalculate(hartNumber);
-  }, [hartNumber]);
+    return hardCalculate(hardNumber);
+  }, [hardNumber]);
 
   // easyCalculate는 매번 실행됨
   const easySum = easyCalculate(easyNumber);
@@ -31,8 +31,8 @@ function App() {
         <span className="inp-box">
           <input
             type="number"
-            value={hartNumber}
-            onChange={(e) => {setHartNumber(Number(e.target.value))}}
+            value={hardNumber}
+            onChange={(e) => {sethardNumber(Number(e.target.value))}}
           />
         </span>
         <span> + 10000 = {hardSum}</span>
